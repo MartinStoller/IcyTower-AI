@@ -298,7 +298,7 @@ def get_score(img, score_queue, score_reward_queue, reward, passed_platforms):
         elif reward > 190 and passed_platforms < 8:
             reward = 0
     except:
-        print("ALAAAAAAARM! AAAAAAAAAAAAALAAAAAAARM!!")
+        print("Warning: Problems with Score detection")
         restart_icytower()
     return reward, score
 
